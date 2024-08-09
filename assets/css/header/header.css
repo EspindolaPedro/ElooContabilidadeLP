@@ -5,6 +5,9 @@ header {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+.icons {
+    margin-right: 20px;
+}
 .icons img {
     margin-right: 20px;
 }
@@ -53,7 +56,7 @@ a {
     overflow-y: hidden;
 }
 nav.active .menu {
-    height: calc(100vh - 85px);
+    height: calc(100vh - 80px);
     visibility: visible;
     overflow-y: auto;
 }
