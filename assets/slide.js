@@ -142,7 +142,7 @@ export class Slide {
         this.activePrevSlide = this.activePrevSlide.bind(this);
         this.activeNextSlide = this.activeNextSlide.bind(this);
 
-        this.onResize = debounce(this.onResize.bind(this), 200);
+        this.onResize = debounce(this.onResize.bind(this), 500);
     }
 
     init() {
@@ -152,6 +152,7 @@ export class Slide {
         this.slidesConfig();
         this.changeSlide(0); // Iniciar com o primeiro slide ativo
         this.addResizeEvent();
+        window.addEventListener('load', this.onResize);
         return this;
     }
 }
@@ -171,8 +172,7 @@ export class SlideNav extends Slide {
         this.nextElement.addEventListener('click', this.activeNextSlide);
     }
 
-
-
+    
     createControl() {
         const control = document.createElement('ul');
         control.dataset.control = 'slide';
@@ -193,7 +193,7 @@ export class SlideNav extends Slide {
     }
     activeControlItem() {
         this.controlArray.forEach((item) => {
-            item.classList.remove(this.activeClass)
+            item.classList.remove(this.activeClass);
         });
         this.controlArray[this.index.active].classList.add(this.activeClass);
     }

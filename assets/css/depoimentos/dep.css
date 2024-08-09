@@ -22,6 +22,9 @@ img {
     will-change: transform;
 }
 .slide li {
+    justify-content: center;
+}
+.slide li {
     width: 80vw;
     flex-shrink: 0;
     max-width:max-content;
