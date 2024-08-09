@@ -1,0 +1,86 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+html, body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+}
+body {
+    background-color: var(--body);
+}
+a, li, ul {
+    list-style: none;
+    text-decoration: none;
+    
+}
+.container{
+    max-width: 1350px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+img {
+    max-width: 100%;
+}
+.botao {
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;   
+ 
+}
+.botao::after {
+    content: '➤';
+    align-content: center;
+    margin-left: 12px;
+    transition: transform .2s;
+}
+.botao:hover::after {
+    transform: translateX(4px);
+}
+.glow-button {
+    font-size: 24px;
+    color: #000;
+    background: radial-gradient(circle, #FCE628 8%, #6B5316 100%);
+    border: none;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.7), 0 0 30px rgba(255, 215, 0, 0.7), 0 0 40px rgba(255, 215, 0, 0.7);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.glow-button:hover {
+    box-shadow: 0 0 30px rgba(255, 215, 0, 1), 0 0 50px rgba(255, 215, 0, 1), 0 0 60px rgba(255, 215, 0, 1);
+}
+.golden-text {
+    background: radial-gradient(circle, #c0ad05 0%, #473301 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+@media(max-width:450px) {
+    .botao{
+        font-size: 1rem;
+    }
+}
+img {
+    max-width: 100%;
+}
+@media(max-width: 600px) {
+    .botao {
+        display: block;
+        font-size: 1.2rem;
+        max-width: max-content;
+        margin: 0 auto;
+    }
+    .botao:hover::after {
+        
+        height: auto;
+    }
+}

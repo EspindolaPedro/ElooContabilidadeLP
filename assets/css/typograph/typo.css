@@ -1,0 +1,21 @@
+.font-text-head {
+    font:400 3.250rem/1.0416 "Roboto", sans-serif;
+}
+.font-text-s {
+    font:400 1.5rem/1.15 "Poppins", sans-serif;
+}
+.font-text-h2 {
+    font:400 2.875rem/0.95 "Roboto", sans-serif;
+}
+.font-text-m {
+    font:200 1.5rem/1.2 "Poppins", sans-serif;
+}
+.font-h3-s {
+    font:400 2rem/1 "Roboto", sans-serif;
+}
+
+@media(max-width: 400px ) {
+    .font-text-head {
+        font-size: 2rem;
+    }
+}

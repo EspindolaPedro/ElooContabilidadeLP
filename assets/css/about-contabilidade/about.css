@@ -1,0 +1,90 @@
+.about-contabilidade {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 40px;
+}
+
+.about-contabilidade h1 {
+    padding-top: 80px;
+}
+
+.about-contabilidade .photoEloo {
+    width: 100%;
+    height: 100%;
+    object-fit: right;
+    display: block;
+}
+
+.about-contabilidade,
+#about-contabilidade {
+    box-shadow: inset 0 80px var(--body), inset 0 -80px var(--body);
+}
+
+.about-contabilidade-content {
+    padding-top: 80px;
+}
+
+.about-contabilidade-content h1,
+.about-contabilidade-content img {
+    margin-bottom: 25px;
+}
+
+.about-contabilidade-content p {
+    margin-bottom: 45px;
+}
+
+@media (max-width: 1080px) {
+    .about-contabilidade h1 {
+        padding-top: 30px;
+    }
+
+  
+}
+@media (max-width:920px) {
+    .about-contabilidade,
+    #about-contabilidade {
+        box-shadow: inset 0 40px var(--body);
+    }
+}
+@media (max-width: 890px) {
+
+    .about-contabilidade-content {
+        padding-top: 20px;
+    }
+    .photoEloo {
+        max-width: 60%;
+        width: 100%;
+        height: auto;
+        margin:0  auto;
+    }
+    .about-contabilidade-content h1,
+    .about-contabilidade-content img {
+        margin-bottom: 15px;
+    }
+    .about-contabilidade {
+        grid-template-columns: 1fr;
+    }
+    .about-contabilidade .photoEloo {
+        grid-area: 1/2 2;
+    }
+    .about-contabilidade {
+        gap: inital;
+    }
+    .about-contabilidade-content {
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 550px) {
+    .photoEloo {
+        max-width:initial;
+    }
+}
+
+@media (max-width: 550px) {
+    .about-contabilidade h1 {
+        font-size: 2rem;
+    }
+    .about-contabilidade p {
+        font-size: 1.2rem;
+    }
+}

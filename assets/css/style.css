@@ -1,0 +1,9 @@
+@import url(color/color.css);
+@import url(typograph/typo.css);
+
+@import url(global.css);
+@import url(header/header.css);
+@import url(home/home.css);
+@import url(insight/insight.css);
+@import url(about-contabilidade/about.css);
+@import url(differences/differences.css);

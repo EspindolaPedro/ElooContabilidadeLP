@@ -1,0 +1,33 @@
+:root {
+    --header-light:#F5F5F4;
+    --body:#F5F5F5;
+    --bg-contrast:#EBEBE9;
+    
+    --detail:#CBB823;
+    --detail-1:#806819;
+
+    --text-h1:#000A3E;
+    --text-h2:#000417;
+    --text-h3:#020D3E;
+    --text-thin:#021366;
+    --text-thin-2:#000724;
+}
+
+.text-h1 {
+    color: var(--text-h1);
+}
+.text-h2 {
+    color: var(--text-h2);
+}
+.text-h3 {
+    color: var(--text-h3 );
+}
+.text-h4 {
+    color:var(--text-thin);
+}
+.text-thin-2 {
+    color: var(--text-thin-2);
+}
+.bg-contrast {
+    background-color: var(--bg-contrast);
+}
