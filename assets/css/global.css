@@ -27,16 +27,34 @@ img {
     max-width: 100%;
 }
 .botao {
+    display: inline-flex;
+    align-items: center;
     cursor: pointer;
     font-family: "Roboto", sans-serif;
     font-weight: 500;   
- 
+    background-position: left bottom;
+    background-size: 200% 100%;
+    transition: background-position 0.8s ease, background-size 0.5s ease;
+}
+.botao:hover {
+    background-position: right bottom; /* Mover o fundo para a direita */
+    background-size: 100% 100%; /* Ajusta o fundo ao tamanho original, preenchendo o botão */
+}
+
+.botao {
+    background-position: left bottom; /* Quando o hover é removido, o fundo retorna à esquerda */
+    background-size: 200% 100%; /* Retorna ao tamanho original */
 }
 .botao::after {
-    content: '➤';
-    align-content: center;
+    content: '';
+    display: inline-flex; 
+    height: 20px; 
+    width: 25px; 
+    background: url(../icon/seta.svg) no-repeat center center; 
+    background-size: contain; 
     margin-left: 12px;
-    transition: transform .2s;
+    transition: transform 0.2s;
+    
 }
 .botao:hover::after {
     transform: translateX(4px);
@@ -80,7 +98,9 @@ img {
         margin: 0 auto;
     }
     .botao:hover::after {
-        
+        content: '';
+        display: inline-flex; 
+        align-content: center;
         height: auto;
     }
 }

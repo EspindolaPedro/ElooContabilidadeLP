@@ -1,0 +1,78 @@
+.FAQ h1 {
+    font-weight: 400;
+}
+.FAQ dl > div{
+    padding: 20px;
+    border-radius: 4px;
+}
+.FAQ dl > div:nth-child(even){
+    background-color:#e7e7e7;
+}
+.FAQ button{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+}
+.FAQ button::before{
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 8px;
+    background:#CBB823;
+
+    background: linear-gradient(to right, #FCE628, #6B5316); /* Aplica o gradiente no hover */
+    background-size: 200% 100%; /* O fundo é duas vezes maior no eixo horizontal */
+    background-position: 0% 0%; /* Posição inicial */
+    animation: moveBackground 2s ease alternate infinite; 
+}
+.FAQ button::after{
+    content: '⤵';  
+    height: 14px;
+    transform: .3s;
+}
+.FAQ button:hover::after,
+.FAQ button[aria-expanded="true"]::after{
+    content:'⤴';
+    transform: rotate(0);
+}
+.FAQ dd{
+    padding-left: 20px ;
+    padding-top: 16px;
+    max-width: 80ch;
+}
+
+.js .answer {
+    display: none;
+    opacity: 1;
+    transition: opacity 3s;
+}
+
+.FAQ dd.active{
+    display: block;
+    transition: .3s;
+    opacity: 1;
+}
+.FAQ span {
+    font-weight: 500;
+}
+.FAQ{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 10px;
+}
+.FAQ a,
+.FAQ p {
+    align-items: center;
+    margin: 0 auto;
+}
+.FAQ p {
+    font-family: "Poppins";
+    font-weight: 600;
+}

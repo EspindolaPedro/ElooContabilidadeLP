@@ -16,6 +16,10 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
 
+        <script>
+        document.documentElement.classList.add('js');
+        </script>
+
 </head>
 
 <body>
@@ -118,7 +122,7 @@
                     de economia tributária dentro da legalidade.<br>
                     <strong>Beneficío</strong>: Reduza custos através de planejamento tributário eficiente e estratégias
                     de minimização de impostos.
-                </p>
+                </p>                    
             </div>
 
             <img src="assets/icon/foguete.png" alt="Foguete" />
@@ -193,13 +197,69 @@
         </div>
     </aside>
 
-    <section class="FAQ" id="FAQ" aria-label=""> 
-        <div class="">
-
-        </div>
+    <section class="FAQ container" id="FAQ" aria-label="Perguntas Frequentes"> 
+        <h1 class="font-head-h4 text-h3">Perguntas Frequentes.</h1>
+        <dl>
+            <div class="q">
+                <dt><button class="font-h8 dt" aria-controls="pergunta1" aria-expanded="true">Quais são as vantagens da contabilidade consultiva?</button></dt>
+                <dd id="pergunta1" class="font-h10 answer active">
+                    Melhoria na tomada de decisões, planejamento estratégico e financeiro mais preciso, otimização da gestão de recursos, uso avançado de tecnologia, atendimento personalizado e fomento à inovação e crescimento do negócio.
+                </dd>
+            </div>
+    
+            <div class="q">
+                <dt><button class="font-h8 dt" aria-controls="pergunta2" aria-expanded="false">Como a contabilidade consultiva difere da contabilidade tradicional?</button></dt>
+                <dd id="pergunta2" class="font-h10 answer">
+                    A contabilidade consultiva vai além do simples registro e reporte de transações financeiras, oferecendo análises detalhadas e estratégias para melhorar a performance da empresa, enquanto a contabilidade tradicional se concentra principalmente no cumprimento de obrigações fiscais e contábeis.
+                </dd>
+            </div>
+    
+            <div class="q">
+                <dt><button class="font-h8 dt" aria-controls="pergunta3" aria-expanded="false">Quais são os benefícios da contabilidade consultiva para as empresas?</button></dt>
+                <dd id="pergunta3" class="font-h10 answer">
+                    A contabilidade consultiva oferece benefícios como maior eficiência operacional, redução de custos, planejamento fiscal estratégico, além de ajudar as empresas a identificar oportunidades de crescimento e inovação.
+                </dd>
+            </div>
+    
+            <div class="q">
+                <dt><button class="font-h8 dt" aria-controls="pergunta4" aria-expanded="false">Como implementar a contabilidade consultiva na minha empresa?</button></dt>
+                <dd id="pergunta4" class="font-h10 answer">
+                    Para implementar a contabilidade consultiva, é essencial começar com uma análise detalhada das necessidades da empresa, selecionar uma equipe de contadores com experiência em consultoria, integrar tecnologias que facilitem a análise de dados e alinhar os serviços contábeis com os objetivos estratégicos do negócio.
+                </dd>
+            </div>
+        </dl>
     </section>
 
+    <section id="contato" class="container">
+        <h1 class="font-head-h4">Contato</h1>
+        <div class="form-contact">
+            <div>
+                <label class="n" for="name">Nome</label><br>
+                <input type="text"/>
+            </div>
 
+            <div>
+                <label class="e" for="email">Email</label><br>
+                <input type="email" placeholder="contato@email.com"/>
+            </div>
+
+            <div>
+                <label class="p" for="phone">Telefone</label><br>
+                <input type="text" placeholder="(67) 9 9999-9999"/>
+            </div>
+
+            <button class="botao">ENVIAR CONTATO</button>
+        </div>
+
+        <div class="location-content">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14950.945418455136!2d-54.60674!3d-20.476019!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9486e8a9aa7e7a3d%3A0xa29cb36921951ce!2sR.%20Sebasti%C3%A3o%20Lima%2C%20944%20-%20Centro%2C%20Campo%20Grande%20-%20MS%2C%2079004-600%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1723470789288!5m2!1spt-BR!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <p>R. Sebastião Lima, 944 - Jardim Monte Libano, Campo Grande 
+                - MS, 79004-600</p>
+
+        </div>
+
+    </section>
 
     <script src="assets/script.js"></script>
     <script type="module" src="assets/module.js"></script>
