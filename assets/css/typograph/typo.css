@@ -5,19 +5,19 @@
     font:300 1.5rem/1.4 "Poppins", sans-serif;
 }
 .font-text-h2 {
-    font:400 2.875rem/0.95 "Roboto", sans-serif;
+    font:400 2.875rem/1 "Roboto", sans-serif;
 }
 .font-text-m {
-    font:200 1.5rem/1.2 "Poppins", sans-serif;
+    font:200 1.5rem/1.3 "Poppins", sans-serif;
 }
 .font-h3-s {
-    font:400 2rem/1 "Roboto", sans-serif;
+    font:400 2rem/1.3 "Roboto", sans-serif;
 }
 .font-head-h4 {
-    font:300 2.5rem/1 "Roboto", sans-serif;
+    font:300 2.5rem/1.3 "Roboto", sans-serif;
 }
 .font-head-h5 {
-    font:400 2.5rem/1 "Roboto", sans-serif;
+    font:400 2.5rem/1.2 "Roboto", sans-serif;
 }
 @media(max-width: 400px ) {
     .font-text-head {

@@ -25,8 +25,8 @@
 <body>
     <header class="container">
         <div class="icons">
-            <img width="44" height="46" src="assets/icon/instagram.svg" alt="instagram icone" />
-            <img width="45" height="45" src="assets/icon/facebook.svg" alt="instagram icone" />
+            <a href="https://www.instagram.com/adrianacandido.contadora/" target="_blank"> <img src="assets/icon/instagram.svg" alt="Instagram"></a> 
+            <a href="https://www.facebook.com/ellocontabms" target="_blank"> <img src="assets/icon/facebook.svg" alt="Facebook"></a>
         </div>
         <img width="152" height="65" class="logo" src="assets/images/logo.webp" alt="Eloo Contabilidade Logo" />
 
@@ -36,7 +36,7 @@
             </button>
             <ul class="menu js-menu">
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#beneficio">Benefícios</a></li>
+                <li><a href="#diferenciais">Diferenciais</a></li>
                 <li><a href="#perguntas">Perguntas</a></li>
                 <li><a href="#depoimentos">Depoimentos</a></li>
                 <li><a href="#contato">Contato</a></li>
@@ -45,16 +45,20 @@
     </header>
 
     <section id="home" class="bg-contrast" aria-label="seção primaria">
-        <div class="container">
+        <div class="container fade-left">
             <div class="home-content">
                 <h1 class="font-text-head text-h1">Transforme suas Finanças Empresariais com a Contabilidade Consultiva
                 </h1>
                 <p class="font-text-s text-h4">Desbloqueie o potencial máximo de sua empresa com estratégias
                     personalizadas e orientação especializada.</p>
-                <a href="#" class="botao glow-button">FALE COMIGO</a>
+                <a href="#" onclick="sendMessage()" class="botao glow-button ">FALE COMIGO</a>
+               
+                <input type="hidden" id="message" placeholder="Digite sua mensagem"
+                value="Olá, Tudo bem? Encontrei vocês pelo site e estou interessado(a) em saber mais.">
+
             </div>
 
-            <picture>
+            <picture class="zoom-in">
                 <source srcset="assets/images/eloofotoMobile.png" media="(max-width:1050px)">
                 <img class="elooFoto" src="assets/images/elooFoto.webp" alt="">
             </picture>
@@ -62,7 +66,7 @@
     </section>
 
     <section class="container insight" aria-label="seção secundária">
-        <div class="section-insight">
+        <div class="section-insight slide-up">
             <h2 class="font-text-h2 text-h3">
                 Descubra como a Contabilidade Consultiva Pode Revolucionar a Gestão Financeira da sua Empresa!
             </h2>
@@ -73,18 +77,18 @@
                 e orientação contínua para ajudar sua empresa a crescer de forma sustentável e lucrativa.
             </p>
         </div>
-        <img class="setabig" src="assets/images/setabig.webp" alt="seta ilustrativa">
+        <img class="setabig zoom-in " src="assets/images/setabig.webp" alt="seta ilustrativa">
     </section>
 
 
     <section id="about-contabilidade" class=" bg-contrast" aria-label="Sobre a contabilidade consultiva">
         <div class="container about-contabilidade">
-            <picture>
-                <source srcset="assets/images/elophotoMobile.png" media="(max-width:890px)">
+            <picture class="zoom-in">
+                <source  srcset="assets/images/elophotoMobile.png" media="(max-width:890px)">
                 <img class="photoEloo" src="assets/images/eloophoto2.webp" alt="Foto Adriana">
             </picture>
 
-            <div class="about-contabilidade-content">
+            <div class="about-contabilidade-content fade-right" >
                 <h1 class="font-text-h2 text-h3">A Contabilidade Consultiva</h1>
                 <img src="assets/icon/linhaDourada.svg" alt="linha dourada" />
                 <p class="font-text-m text-thin-2">
@@ -92,19 +96,19 @@
                     empresa a tomar decisões financeiras conscientes, identificando oportunidades de crescimento e
                     resolvendo desafios complexos, elevando seu negócio ao próximo nível.
                 </p>
-                <a href="#" class="botao glow-button">Saber mais</a>
+                <a href="#" onclick="sendMessage()" class="botao glow-button">Saber mais</a>
             </div>
         </div>
     </section>
 
-    <article id="" class="differences container">
+    <article id="diferenciais" class="differences container">
 
-        <h2 class="font-text-h2 text-h3">Os Principais <span class="golden-text">Diferenciais.</span></h2>
+        <h2 class="font-text-h2 text-h3  zoom-out">Os Principais <span class="golden-text">Diferenciais.</span></h2>
 
         <div class="grid-sec">
 
-            <img src="assets/icon/grafic.png" alt="Grafico" />
-            <div class="items ">
+            <img src="assets/icon/grafic.png" class="fade-left" alt="Grafico" />
+            <div class="items fade-left ">
                 <h3 class="font-h3-s text-h3">Análise de Fluxo de Caixa Detalhada:</h3>
                 <p class="font-text-m text-thin-2">
                     Oferecemos uma análise minuciosa do seu fluxo de caixa, permitindo a você entender melhor as
@@ -114,8 +118,8 @@
                 </p>
             </div>
 
-            <img src="assets/icon/lupa.png" alt="Lupa" />
-            <div class="items ">
+            <img src="assets/icon/lupa.png" class="fade-right" alt="Lupa" />
+            <div class="items fade-right">
                 <h3 class="font-h3-s text-h3 ">Otimização e Análise Tributária:</h3>
                 <p class="font-text-m text-thin-2">
                     Nossa expertise inclui uma revisão completa das suas obrigações fiscais, identificando oportunidades
@@ -125,8 +129,8 @@
                 </p>                    
             </div>
 
-            <img src="assets/icon/foguete.png" alt="Foguete" />
-            <div class="items ">
+            <img src="assets/icon/foguete.png" class="fade-left" alt="Foguete" />
+            <div class="items fade-left">
                 <h3 class="font-h3-s text-h3">Estratégias Personalizadas de Crescimento:</h3>
                 <p class="font-text-m text-thin-2">
                     Desenvolvemos estratégias financeiras customizadas que alinham-se com os objetivos específicos do
@@ -136,8 +140,8 @@
                 </p>
             </div>
 
-            <img src="assets/icon/fogueteMarcado.png" alt="Foguete" />
-            <div class="items ">
+            <img src="assets/icon/fogueteMarcado.png" class="fade-right" alt="Foguete" />
+            <div class="items fade-right">
                 <h3 class="font-h3-s text-h3">Relatórios e Insights Financeiros:</h3>
                 <p class="font-text-m text-thin-2">
                     Fornecemos relatórios personalizados detalhados e insights financeiros que ajudam na tomada de
@@ -151,9 +155,9 @@
     </article>
 
     <section class="bg-contrast" id="sobre">
-        <div class="container sobre">
-            <img class="location" src="assets/images/elooLocation.webp" alt="Foto do escritório">
-            <div class="sobre-content">
+        <div class="container sobre zoom-in">
+            <img class="location zoom-in" src="assets/images/elooLocation.webp" alt="Foto do escritório">
+            <div class="sobre-content ">
                 <h1 class="font-head-h4 text-h3"><span class="golden-text">Eloo Contabilidade</span>: Mais que Números,
                     um Parceiro para o Seu Sucesso</h1>
                 <img src="assets/icon/linhaDourada.svg" alt="linha dourada" />
@@ -165,9 +169,9 @@
         </div>
     </section>
 
-    <article class="container" id="depoimentos">
+    <article class="container slide-up" id="depoimentos">
 
-        <h1 class="font-head-h5 text-h3">O que dizem <span class="golden-text">sobre nós</span></h1>
+        <h1 class="font-head-h5 text-h3  zoom-out">O que dizem <span class="golden-text">sobre nós</span></h1>
 
         <div class="slide-wrapper">
             <ul class="slide">
@@ -180,7 +184,7 @@
     </article>
 
     <aside class="container costumers" id="costumers">
-        <h2 class="font-head-h5 text-h3">Alguns dos <span class="golden-text">nossos clientes</span></h2>
+        <h2 class="font-head-h5 text-h3  zoom-out">Alguns dos <span class="golden-text">nossos clientes</span></h2>
 
         <div class="slider" >
             <div class="list">
@@ -197,8 +201,8 @@
         </div>
     </aside>
 
-    <section class="FAQ container" id="FAQ" aria-label="Perguntas Frequentes"> 
-        <h1 class="font-head-h4 text-h3">Perguntas Frequentes.</h1>
+    <section id="perguntas" class="FAQ container zoom-out" id="FAQ" aria-label="Perguntas Frequentes"> 
+        <h1 class="font-head-h4 text-h3  slide-up">Perguntas Frequentes.</h1>
         <dl>
             <div class="q">
                 <dt><button class="font-h8 dt" aria-controls="pergunta1" aria-expanded="true">Quais são as vantagens da contabilidade consultiva?</button></dt>
@@ -230,25 +234,25 @@
         </dl>
     </section>
 
-    <section id="contato" class="container">
+    <section id="contato" class="container  slide-up">
         <h1 class="font-head-h4">Contato</h1>
         <div class="form-contact">
-            <div>
-                <label class="n" for="name">Nome</label><br>
-                <input type="text"/>
-            </div>
-
-            <div>
-                <label class="e" for="email">Email</label><br>
-                <input type="email" placeholder="contato@email.com"/>
-            </div>
-
-            <div>
-                <label class="p" for="phone">Telefone</label><br>
-                <input type="text" placeholder="(67) 9 9999-9999"/>
-            </div>
-
-            <button class="botao">ENVIAR CONTATO</button>
+            <form action="" id="contactForm">
+                <div class="fade-left">
+                    <label class="n" for="name">Nome</label><br>
+                    <input type="text"/>
+                </div>
+                <div class="fade-left">
+                    <label class="e" for="email">Email</label><br>
+                    <input type="email" placeholder="contato@email.com"/>
+                </div>
+                <div class="fade-left">
+                    <label class="p" for="phone">Telefone</label><br>
+                    <input type="text" placeholder="(67) 9 9999-9999"/>
+                </div>
+                <button id="button" class="botao rotate">ENVIAR CONTATO</button> <br> <br>
+                <span id="popUpMessage"></span>
+            </form>
         </div>
 
         <div class="location-content">
@@ -261,7 +265,31 @@
 
     </section>
 
+    <footer id="footer" class="bg-contrast">
+        <div class="footer container">
+            <p>©️ 2024 Eloo Contabilidade e Assessoria. Todos os direitos reservados.</p> <br>
+            
+            <span>DESENVOLVIDO POR <a href="https://retenmax.com.br/" target="_blank"><img src="assets/images/logoMax.svg" alt="Retenmax logo"></a></span>
+
+            <div class="footer-img"><a href="https://www.instagram.com/adrianacandido.contadora/" target="_blank"> <img src="assets/icon/instagram.svg" alt="Instagram"></a> <a href="https://www.facebook.com/ellocontabms" target="_blank"> <img src="assets/icon/facebook.svg" alt="Facebook"></a> </div>
+        </div>
+    </footer>
+
+
+    <div class="whatsapp-button">
+        <a href="#" onclick="sendMessage()">
+            <img width="175" height="176" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        </a>
+    </div>
+    <div id="chat-box" class="chat-box">
+        <p>Entre em contato para mais informações!</p>
+        <button id="close-chat">X</button>
+    </div>
+
+
+
     <script src="assets/script.js"></script>
+    <script src="assets/anima.js"></script>
     <script type="module" src="assets/module.js"></script>
 </body>
 </html>

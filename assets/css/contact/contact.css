@@ -34,7 +34,7 @@
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.1) ;
 }
 .form-contact button {
-    margin-top: 15px;
+    margin-top: 25px;
     padding: 2% 3%;
     font-size: 1.1rem;
     font-weight: 500;
@@ -119,8 +119,6 @@
     .location-content {
         margin-left:initial;
     }
-
-
     .location-content {
         align-items:center;
     }
@@ -130,8 +128,6 @@
     }
     .form-contact button {
         padding: 10px 15px;
+        margin-bottom: 20px;
     }
-}
-@media (max-width:900px) {
-
 }
